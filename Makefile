@@ -8,7 +8,7 @@ BINDIR = bin
 SOURCES = $(wildcard $(SRCDIR)/*.c)
 HEADERS = $(wildcard $(INCDIR)/*.h)
 OBJECTS = $(patsubst $(SRCDIR)/%.c, $(BINDIR)/%.o, $(SOURCES))
-EXECUTABLE = $(BINDIR)/myprogram
+EXECUTABLE = $(BINDIR)/CyConnect
 
 all: $(EXECUTABLE)
 
