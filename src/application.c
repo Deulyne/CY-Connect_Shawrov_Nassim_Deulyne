@@ -176,7 +176,7 @@ void moveRotatePosition(int **board,int getchRota,int *x,int *y,int *choiceRotat
 }
 
 //système qui règle le backend du déplacement pour le choix de la rotation
-void moveChoiceRotateDirection(int boardChoiceRotateDirection[1],int getchChoiceRotateDirection,int *choiceRotateDirection,int *choiceRotateDirectionNotDone){
+void moveChoiceRotateDirection(int boardChoiceRotateDirection[2],int getchChoiceRotateDirection,int *choiceRotateDirection,int *choiceRotateDirectionNotDone){
     switch (getchChoiceRotateDirection){
         case KEY_UP:
             if((*choiceRotateDirection)>0){
