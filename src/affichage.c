@@ -163,7 +163,7 @@ void winnerAnimation(int **board, int win_index[5][2],int actualToken,int boardN
 }
 
 
-//affichage du menu de begin
+//affichage du menu de démarrage
 void displayBegin(WINDOW* beginWin) {
     wrefresh(beginWin);
 
@@ -221,7 +221,7 @@ void displayPause(WINDOW*pauseWin){
     wrefresh(pauseWin);
 }
 
-//procédure de fake affichage de sauvegarde
+//procédure de l'affichage de l'écran de sauvegarde
 void displaySave(WINDOW*saveWin){
     box(saveWin, ACS_VLINE, ACS_HLINE);
 
@@ -241,7 +241,7 @@ void displaySave(WINDOW*saveWin){
     usleep(200000);
 }
 
-//procédure de fake affichage de chargement
+//procédure de l'affichage de l'écan de chargement
 void displayLoading(WINDOW*loadingWin){
     box(loadingWin, ACS_VLINE, ACS_HLINE);
 
