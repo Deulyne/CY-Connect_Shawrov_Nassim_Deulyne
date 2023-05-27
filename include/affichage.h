@@ -10,7 +10,7 @@ void displayTokenChoicePosition(int *tokenChoiceBoard, int tokenChoicePosition,i
 
 void displayChoiceRotatePosition(int **board,int RotatePositionX,int RotatePositionY,int dimension,int boardNbLine,int boardNbColumn);
 
-void displayChoiceRotateDirection(int boardChoiceRotateDirection[2],int boardNbColumn);
+void displayChoiceRotateDirection(int boardChoiceRotateDirection[3],int boardNbColumn);
 
 void winnerAnimation(int **board, int win_index[5][2],int actualToken,int boardNbLine,int boardNbColumn);
 
