@@ -140,7 +140,7 @@ void moveTokenPlayingCursor(int *tokenChoiceBoard,int getchToken,int *tokenChoic
 }
 
 //système qui règle le backend du déplacement pour le choix de la position de la rotation
-void moveRotatePosition(int **board,int getchRota,int *x,int *y,int *choiceRotatePositionNotDone,int dimensioin,int RotatePositionX,int RotatePositionY,int boardNbLine,int boardNbColumn){
+void moveRotatePosition(int **board,int getchRota,int *x,int *y,int *choiceRotatePositionNotDone,int dimension,int RotatePositionX,int RotatePositionY,int boardNbLine,int boardNbColumn){
     switch(getchRota) {
         case KEY_LEFT:
             if ((*y) > 0) {
@@ -149,7 +149,7 @@ void moveRotatePosition(int **board,int getchRota,int *x,int *y,int *choiceRotat
             break;
 
         case KEY_RIGHT:
-            if ((*y) < boardNbColumn-dimensioin) {
+            if ((*y) < boardNbColumn-dimension) {
                 (*y)++;
             }
             break;
@@ -161,13 +161,13 @@ void moveRotatePosition(int **board,int getchRota,int *x,int *y,int *choiceRotat
             break;
 
         case KEY_DOWN:
-            if ((*x) < boardNbLine-dimensioin) {
+            if ((*x) < boardNbLine-dimension) {
                 (*x)++;
             }
             break;
 
         case '\n':
-            if(verifyRotate(board,RotatePositionX,RotatePositionY,dimensioin)){
+            if(verifyRotate(board,RotatePositionX,RotatePositionY,dimension)){
                 (*choiceRotatePositionNotDone)--;
                 break;
             }
