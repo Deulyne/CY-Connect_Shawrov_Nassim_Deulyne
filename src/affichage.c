@@ -100,7 +100,7 @@ void displayChoiceRotatePosition(int **board,int RotatePositionX,int RotatePosit
 }
 
 //frontend du choix du sens de la rotation
-void displayChoiceRotateDirection(int boardChoiceRotateDirection[2],int boardNbColumn){
+void displayChoiceRotateDirection(int boardChoiceRotateDirection[3],int boardNbColumn){
     printw("\n");
     spacementX(boardNbColumn+3);
     printw("rotation:\n\n");
