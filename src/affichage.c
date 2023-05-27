@@ -68,7 +68,7 @@ void displayTokenChoicePosition(int *tokenChoiceBoard, int tokenChoicePosition,i
     refresh();
 }
 
-//frontend du choix du bloc à faire rotate
+//frontend du choix du bloc à faire pivoter
 void displayChoiceRotatePosition(int **board,int RotatePositionX,int RotatePositionY,int dimensioin,int boardNbLine,int boardNbColumn){
     spacementY(boardNbLine-2);
     spacementX(boardNbColumn+3);
