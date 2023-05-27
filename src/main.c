@@ -9,11 +9,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-// indentation à faire
-// renommer toutes les variables
-// en cas de double puissance 5 de couleur différent, il y a match nul
-
-
 int main(){
     setlocale(LC_ALL, "");
     initscr();
@@ -232,12 +227,12 @@ int main(){
 
             //initialisation de la dimension        
             srand(time(NULL));
-            int dimensioin= rand() % 2;
-            if(dimensioin==0){
-                dimensioin=3;
+            int dimension= rand() % 2;
+            if(dimension==0){
+                dimension=3;
             }
             else{
-                dimensioin=5;
+                dimension=5;
             }
 
             
@@ -323,24 +318,24 @@ int main(){
             if(playToken(board,tokenChoicePosition,actualToken,boardNbLine,boardNbColumn)){
 
                 while(choiceRotatePositionNotDone){
-                    displayChoiceRotatePosition(board,RotatePositionX,RotatePositionY,dimensioin,boardNbLine,boardNbColumn);
+                    displayChoiceRotatePosition(board,RotatePositionX,RotatePositionY,dimension,boardNbLine,boardNbColumn);
                     printw("\n\n");
                     spacementX(boardNbColumn+boardNbColumn/2);
                     printw("joueur %lc,\n",actualToken);
                     spacementX(boardNbColumn+boardNbColumn/2);
-                    printw("vous avez obtenu la dimension %d\n",dimensioin);
+                    printw("vous avez obtenu la dimension %d\n",dimension);
                     spacementX(boardNbColumn+boardNbColumn/2);
                     printw("choisissez où vous voulez l'appliquer.");
                     printw("\n");
                     int getchRota= getch();
 
                     //x,y inversé
-                    moveRotatePosition(board,getchRota,&RotatePositionX,&RotatePositionY,&choiceRotatePositionNotDone,dimensioin,RotatePositionY,RotatePositionX,boardNbLine,boardNbColumn);
+                    moveRotatePosition(board,getchRota,&RotatePositionX,&RotatePositionY,&choiceRotatePositionNotDone,dimension,RotatePositionY,RotatePositionX,boardNbLine,boardNbColumn);
                 }
                 BoardCopy(board,rotatedBoard,boardNbLine,boardNbColumn);
 
                 while(choiceRotateDirectionNotDone){
-                    displayChoiceRotatePosition(rotatedBoard,RotatePositionX,RotatePositionY,dimensioin,boardNbLine,boardNbColumn);
+                    displayChoiceRotatePosition(rotatedBoard,RotatePositionX,RotatePositionY,dimension,boardNbLine,boardNbColumn);
                     printw("\n");
                     displayChoiceRotateDirection(boardChoiceRotateDirection,boardNbColumn);
                     printw("\n");
@@ -349,10 +344,10 @@ int main(){
                     if(choiceRotateDirection!=1){
                         BoardCopy(board,rotatedBoard,boardNbLine,boardNbColumn);
                         if(choiceRotateDirection==2){
-                            rotate(rotatedBoard,RotatePositionY,RotatePositionX,1,dimensioin,boardNbLine,boardNbColumn);
+                            rotate(rotatedBoard,RotatePositionY,RotatePositionX,1,dimension,boardNbLine,boardNbColumn);
                         }
                         else{
-                            rotate(rotatedBoard,RotatePositionY,RotatePositionX,0,dimensioin,boardNbLine,boardNbColumn);
+                            rotate(rotatedBoard,RotatePositionY,RotatePositionX,0,dimension,boardNbLine,boardNbColumn);
                         }
                     }
                     else{
