@@ -3,8 +3,8 @@
 # Description
 Notre projet se nomme Cy-Connect, c'est entre autre un remix du puissance 4 avec des règles et fonctionnalités supplémentaires :
 1) Le jeu peut se jouer jusqu'à 3 personnes (voir plus ;)).
-2) Lors de chaque tour, après que le joueur aie joué, il doit choisir de faire pivoter une zone 3x3 ou 5x5 (choisi aléatoirement par l'ordinateur) 90 vers la droite ou la gauche.
-3) Pour gaganer, on doit aligner 5 jetons, que se soit en diagonales, en ligne ou en colonne.
+2) Lors de chaque tour, après que le joueur aie joué, il doit choisir de faire pivoter une zone 3x3 ou 5x5 (choisi aléatoirement par l'ordinateur) 90° vers la droite ou la gauche.
+3) Pour gagner, le joueur doit aligner 5 jetons, que se soit en diagonales, en ligne ou en colonne.
 
 
 # Fonctionnalités
