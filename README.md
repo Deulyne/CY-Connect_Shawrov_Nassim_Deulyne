@@ -1,9 +1,10 @@
-# MI1_CY-Connect_Shawrov_Nassim_Deulyne
-
-# Projet Puissance 5
+# Cy-Connect
 
 # Description
-Notre projet est un puissance 5, c’est à dire le même jeu que le puissance 4 avec les mêmes condition de victoire en alignant une ligne, une colonne ou une diagonale de 5 pièces. Les joueurs jouent à tour de rôle et à la fin du tour d’un joueur, il doit choisir une zone de case à pivoter soit une zone de 3x3x3, soit une zone de 5x5x5. Une fois, la zone sélectionné, on choisit soit de pivoter à droite, soit à gauche de 90°. La partie se termine lorsque un joueur aligne 5 pièces.
+Notre projet se nomme Cy-Connect, c'est entre autre un remix du puissance 4 avec des règles et fonctionnalités supplémentaires :
+1) Le jeu peut se jouer jusqu'à 3 personnes (voir plus ;)).
+2) Lors de chaque tour, après que le joueur aie joué, il doit choisir de faire pivoter une zone 3x3 ou 5x5 (choisi aléatoirement par l'ordinateur) 90 vers la droite ou la gauche.
+3) Pour gaganer, on doit aligner 5 jetons, que se soit en diagonales, en ligne ou en colonne.
 
 
 # Fonctionnalités
@@ -16,10 +17,15 @@ Notre projet est un puissance 5, c’est à dire le même jeu que le puissance 4
 
 # Utilisation
 
-	1.	Extraire dans un répertoire le dossier
-	2.	Lancer dans le terminal du dossier, la commande " make run "
-	3.	Le menu est accessible avec la touche "e"
+	1.	Télécharger et extraire le dossier
+	2.	Lancer dans un terminal dans le dossier où se trouve le "Makefile"
+	3.	Lancez la commande "make run"
 	4.	Enjoy the game :)
+	
+# Prérequis
+
+	•	Être sur Linux
+	•	Installer la bibliothèque ncurses
 
 
 # Auteur
@@ -29,5 +35,3 @@ DESTIN Deulyne
 
 BERRANDOU Nassim
 
-# Remarques
-Pour toute question , veuillez nous contacter à l'adresse mail : berrandoun@cy-tech.fr
