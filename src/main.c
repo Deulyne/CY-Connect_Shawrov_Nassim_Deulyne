@@ -216,7 +216,7 @@ int main(){
             int choiceRotateDirection =1;
 
 
-            int boardChoiceRotateDirection[2];
+            int boardChoiceRotateDirection[3];
             createChoiceBoardToken(tokenChoiceBoard,boardNbColumn);
             createChoiceBoardRotateDirection(boardChoiceRotateDirection);
 
