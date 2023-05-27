@@ -12,7 +12,7 @@ void gravityApplication(int **board,int boardNbLine,int boardNbColumn);
 
 void moveRotatePosition(int **board,int getchRota,int *x,int *y,int *choiceRotatePositionNotDone,int dimension,int RotatePositionX,int RotatePositionY,int boardNbLine,int boardNbColumn);
 
-void moveChoiceRotateDirection(int boardChoiceRotateDirection[2],int getchChoiceRotateDirection,int *choiceRotateDirection,int *choiceRotateDirectionNotDone);
+void moveChoiceRotateDirection(int boardChoiceRotateDirection[3],int getchChoiceRotateDirection,int *choiceRotateDirection,int *choiceRotateDirectionNotDone);
 
 void moveTokenPlayingCursor(int *tokenChoiceBoard,int getchToken,int *tokenChoicePosition,int*choicePlayTokenNotDone,int boardNbColumn);
 
