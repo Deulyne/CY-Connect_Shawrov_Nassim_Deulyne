@@ -8,7 +8,7 @@ void displayBoard(int **board, int boardNbLine, int boardNbColumn);
 
 void displayTokenChoicePosition(int *tokenChoiceBoard, int tokenChoicePosition,int boardNbColumn);
 
-void displayChoiceRotatePosition(int **board,int RotatePositionX,int RotatePositionY,int dimensioin,int boardNbLine,int boardNbColumn);
+void displayChoiceRotatePosition(int **board,int RotatePositionX,int RotatePositionY,int dimension,int boardNbLine,int boardNbColumn);
 
 void displayChoiceRotateDirection(int boardChoiceRotateDirection[2],int boardNbColumn);
 
