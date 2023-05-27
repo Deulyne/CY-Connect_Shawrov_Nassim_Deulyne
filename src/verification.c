@@ -3,9 +3,9 @@
 
 
 //returne 1 si la rotation est accepté
-int verifyRotate(int **board,int x,int y,int dimensioin){
-    for(int i=y;i<y+dimensioin;i++){
-        for(int j=x;j<x+dimensioin;j++){
+int verifyRotate(int **board,int x,int y,int dimension){
+    for(int i=y;i<y+dimension;i++){
+        for(int j=x;j<x+dimension;j++){
             if(board[i][j]!=' '){
                 return 1;
             }
