@@ -217,6 +217,8 @@ int main(){
 
 
             int boardChoiceRotateDirection[3];
+
+            //creation des différents tableaux pour le bon fonctionnement
             createChoiceBoardToken(tokenChoiceBoard,boardNbColumn);
             createChoiceBoardRotateDirection(boardChoiceRotateDirection);
 
@@ -260,7 +262,7 @@ int main(){
                     displayPause(pauseWin);
                     mvwchgat(pauseWin, pauseChoice * 2 - 1, 2, 32, A_BOLD, 2, NULL);
                     wrefresh(pauseWin);
-                    //sleep(2);
+
                     while(getchPause!='\n'){
                         getchPause=getch();
                         if(getchPause=='e'){
@@ -315,8 +317,10 @@ int main(){
                 }
             }
 
+            //si le joueur joue dans un colonne valide
             if(playToken(board,tokenChoicePosition,actualToken,boardNbLine,boardNbColumn)){
-
+                
+                //tant que le choix xy de la rotation n'est pas fait
                 while(choiceRotatePositionNotDone){
                     displayChoiceRotatePosition(board,RotatePositionX,RotatePositionY,dimension,boardNbLine,boardNbColumn);
                     printw("\n\n");
@@ -329,16 +333,21 @@ int main(){
                     printw("\n");
                     int getchRota= getch();
 
-                    //x,y inversé
                     moveRotatePosition(board,getchRota,&RotatePositionX,&RotatePositionY,&choiceRotatePositionNotDone,dimension,RotatePositionY,RotatePositionX,boardNbLine,boardNbColumn);
                 }
+
+                //on recopie la board copié dans le board principal
                 BoardCopy(board,rotatedBoard,boardNbLine,boardNbColumn);
 
+
+                //tant que le joueur n'a pas choixi la direction de la rotation
                 while(choiceRotateDirectionNotDone){
                     displayChoiceRotatePosition(rotatedBoard,RotatePositionX,RotatePositionY,dimension,boardNbLine,boardNbColumn);
                     printw("\n");
                     displayChoiceRotateDirection(boardChoiceRotateDirection,boardNbColumn);
                     printw("\n");
+
+                    //on récupère la touche appuyé par le joueur
                     int getchChoiceRotateDirection=getch();
                     moveChoiceRotateDirection(boardChoiceRotateDirection,getchChoiceRotateDirection,&choiceRotateDirection,&choiceRotateDirectionNotDone);
                     if(choiceRotateDirection!=1){
@@ -357,12 +366,13 @@ int main(){
                 BoardCopy(rotatedBoard,board,boardNbLine,boardNbColumn);
                 gravityApplication(board,boardNbLine,boardNbColumn);
 
-
+                //on récupère le nombre de win
                 is_win = verifyWinner(board, tokenP1,win_index,boardNbLine,boardNbColumn)+verifyWinner(board, tokenP2,win_index,boardNbLine,boardNbColumn)+verifyWinner(board, tokenP3,win_index,boardNbLine,boardNbColumn)+verifyWinner(board, tokenP4,win_index,boardNbLine,boardNbColumn);
                 if(is_win){
                     break;
                 }
             }
+            //sinon on ne change pas le jeton
             else{
                 continue;
             }
