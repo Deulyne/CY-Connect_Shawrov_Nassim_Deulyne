@@ -69,12 +69,12 @@ void displayTokenChoicePosition(int *tokenChoiceBoard, int tokenChoicePosition,i
 }
 
 //frontend du choix du bloc à faire pivoter
-void displayChoiceRotatePosition(int **board,int RotatePositionX,int RotatePositionY,int dimensioin,int boardNbLine,int boardNbColumn){
+void displayChoiceRotatePosition(int **board,int RotatePositionX,int RotatePositionY,int dimension,int boardNbLine,int boardNbColumn){
     spacementY(boardNbLine-2);
     spacementX(boardNbColumn+3);
     for (int i = 0; i < boardNbLine; i++) {
         for (int j = 0; j < boardNbColumn; j++) {
-            if(i>=RotatePositionX && i<RotatePositionX+dimensioin && j>=RotatePositionY && j<RotatePositionY+dimensioin){
+            if(i>=RotatePositionX && i<RotatePositionX+dimension && j>=RotatePositionY && j<RotatePositionY+dimension){
                 printw("|");
                 attron(A_REVERSE);
                 if(board[i][j]==' '){
