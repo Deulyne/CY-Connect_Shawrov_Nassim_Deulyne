@@ -4,7 +4,7 @@
 
 #define WIN_LENGTH 5
 
-int verifyRotate(int **board,int x,int y,int dimensioin);
+int verifyRotate(int **board,int x,int y,int dimension);
 
 int verifyWinner(int **board, int actualToken,int win_index[5][2],int boardNbLine,int boardNbColumn);
 
