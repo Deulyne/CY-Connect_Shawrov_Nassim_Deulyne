@@ -347,9 +347,11 @@ int main(){
                     displayChoiceRotateDirection(boardChoiceRotateDirection,boardNbColumn);
                     printw("\n");
 
-                    //on récupère la touche appuyé par le joueur
+                    //on récupère la touche appuyé par le joueur et modifie le tableau de choix de rotation
                     int getchChoiceRotateDirection=getch();
                     moveChoiceRotateDirection(boardChoiceRotateDirection,getchChoiceRotateDirection,&choiceRotateDirection,&choiceRotateDirectionNotDone);
+                    
+                    //module de prévisualisation
                     if(choiceRotateDirection!=1){
                         BoardCopy(board,rotatedBoard,boardNbLine,boardNbColumn);
                         if(choiceRotateDirection==2){
