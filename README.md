@@ -19,8 +19,8 @@ Notre projet se nomme Cy-Connect, c'est entre autre un remix du puissance 4 avec
 
 	1.	Télécharger et extraire le dossier
 	2.	Lancer dans un terminal dans le dossier où se trouve le "Makefile"
-	3.	Lancez la commande "make run"
-	4.	Enjoy the game :)
+	3.	Lancez la commande "make clean"
+	4.	Lancez la commande "make run"
 	
 # Prérequis
 
