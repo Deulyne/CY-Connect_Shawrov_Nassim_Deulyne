@@ -10,7 +10,7 @@ int playToken(int **board, int playedColumn, int actualToken, int boardNbLine, i
 
 void gravityApplication(int **board,int boardNbLine,int boardNbColumn);
 
-void moveRotatePosition(int **board,int getchRota,int *x,int *y,int *choiceRotatePositionNotDone,int dimensioin,int RotatePositionX,int RotatePositionY,int boardNbLine,int boardNbColumn);
+void moveRotatePosition(int **board,int getchRota,int *x,int *y,int *choiceRotatePositionNotDone,int dimension,int RotatePositionX,int RotatePositionY,int boardNbLine,int boardNbColumn);
 
 void moveChoiceRotateDirection(int boardChoiceRotateDirection[1],int getchChoiceRotateDirection,int *choiceRotateDirection,int *choiceRotateDirectionNotDone);
 
