@@ -26,7 +26,7 @@ void createChoiceBoardToken(int *tokenChoiceBoard,int boardNbColumn){
 }
 
 //creation du tableau qui servira au joueur de jouer le sens de la rotation qu'il souhaite
-void createChoiceBoardRotateDirection(int boardChoiceRotateDirection[2]){
+void createChoiceBoardRotateDirection(int boardChoiceRotateDirection[3]){
     boardChoiceRotateDirection[0]=' ';
     boardChoiceRotateDirection[1]='>';
     boardChoiceRotateDirection[2]=' ';
