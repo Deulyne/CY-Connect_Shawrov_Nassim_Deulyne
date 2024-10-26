@@ -28,7 +28,7 @@ Notre projet se nomme Cy-Connect, c'est entre autre un remix du puissance 4 avec
 	•	Installer la bibliothèque ncurses
 
 
-# Auteur
+# Auteurs
 DAS Shawrov
 
 DESTIN Deulyne
